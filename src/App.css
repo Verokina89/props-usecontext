@@ -1,5 +1,15 @@
 /* App.css */
 
+h2 {
+  font-size: 2em;
+  color: #f7f7f8;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: #f7f7f8;
+}
+
 .calculator, .result {
   text-align: center;
   margin-top: 50px;
@@ -7,10 +17,12 @@
 
 .button-grid {
   display: grid;
+  font-size: 1.5em;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 6px;
   max-width: 200px;
   margin: 0 auto;
+  
 }
 
 button {
@@ -22,7 +34,7 @@ button {
 a {
   display: block;
   margin-top: 20px;
-  color: #007bff;
+  color: #6511d3;
   text-decoration: none;
 }
 
@@ -30,17 +42,49 @@ a:hover {
   text-decoration: underline;
 }
 
+
 .display {
-  font-size: 2.5em;            /* Tamaño de fuente grande para el número actual */
-  padding: 10px;
+  font-size: 2.5em;
   margin-bottom: 20px;
-  color: #333;
-  background-color: #e0e0e0;
+  color: #333333;
+  background-color: #cac2e3;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+.selected-numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.number-bubble {
+  font-size: 2em;
+  padding: 6px 10px;
+  border-radius: 20%;
+  background-color: #7619e9c7;
+  color: #0ae7e3;
+  display: inline-block;
+  box-shadow: 8px 8px 16px rgba(41, 6, 71, 0.996);
+}
+
+.total-result {
+  font-size: 2em;
+  color: #0ae7e3;
+  border-radius: 30%;
+  background-color: #7619e9c7;
+  box-shadow: 10px 12px 24px rgba(41, 6, 71, 0.996);
+  padding: 2px 8px;
+  margin: 40px;
+}
+
+.reset {
+  width: 100px;
+  height: 50px;
+}
 
 /*
 
